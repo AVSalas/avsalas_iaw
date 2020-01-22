@@ -1,4 +1,7 @@
 <?php
+
+//Comprobador notas
+
 $nota = 0.1;
 switch ($nota) {
    case ($nota>=0 and $nota<2):
@@ -17,4 +20,5 @@ switch ($nota) {
        echo "Sobresaliente";
        break;
 };
+
 ?>
