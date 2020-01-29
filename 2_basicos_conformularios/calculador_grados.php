@@ -1,6 +1,6 @@
 <?php
 
-//Conversor grados
+//Calculador grados
 
 $celsius = $_POST['grados'];
 $kelvin = 273 + $celsius;

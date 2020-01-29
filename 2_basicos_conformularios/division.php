@@ -1,9 +1,9 @@
 <?php
 
-//Comprobador restos
+//Division
 
-$valor1 = 14;
-$valor2 = 2;
+$valor1 = $_POST['dividendo'];
+$valor2 = $_POST['divisor'];
 
   if (($valor1%$valor2)!=0) {
     echo $valor1." dividido entre ".$valor2.", su cociente vale ".intdiv($valor1,$valor2).". El resto es ".($valor1/$valor2).".";

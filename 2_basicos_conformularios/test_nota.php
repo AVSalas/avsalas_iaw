@@ -1,6 +1,6 @@
 <?php
 
-//Comprobador notas
+//Test nota
 
 $nota = $_POST['nota'];
 switch ($nota) {
