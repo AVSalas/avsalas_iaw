@@ -1,30 +1,31 @@
+<?php
+// suma
+  switch ($_POST['operacion']) {
+    case 'suma':
+      echo "Resultado: ".(($_POST['numero1'])+($_POST['numero2']));
+      break;
+// resta
+    case 'resta':
+      echo "Resultado: ".(($_POST['numero1'])-($_POST['numero2']));
+      break;
+// multiplicacion
+    case 'multiplicacion':
+      echo "Resultado: ".(($_POST['numero1'])*($_POST['numero2']));
+      break;
+// division
+    case 'division':
+      echo "Resultado: ".(($_POST['numero1'])/($_POST['numero2']));
+      break;
+  };
+?>
 <html>
   <head>
     <title>Calculadora</title>
   </head>
     <body>
-      CALCULADORA
-      <br/>
-      <br/>
-      Numero 1 <input type="text" name="numero1" placeholder="24" autofocus required/>
-      <br/>
-      <br/>
-      Numero 2 <input type="text" name="numero2" placeholder="71" required/>
-      <br/>
-      <br/>
-      Suma <input type="radio" name="Suma" value="Suma"/>
-      <br/>
-      Resta <input type="radio" name="Resta" value="Resta"/>
-      <br/>
-      Multiplicacion <input type="radio" name="Multiplicacion" value="Multiplicacion"/>
-      <br/>
-      Division <input type="radio" name="Division" value="Division"/>
-      <br/>
-      <br/>
-      <input type="submit"  name="Calcular" value="Calcular"/>
-      <input type="reset"  name="Resetear calculadora" value="Calcular"/>
+      <form action="calculadora.html" method="post">
+        <br/>
+       <button>Calcular de nuevo</button>
+      </form>
     </body>
 </html>
-<?php
-
-?>
