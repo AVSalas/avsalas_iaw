@@ -1,10 +1,10 @@
 <?php
 // Credenciales conexion MySQL
 
-$user = "alberto";
-$pass = "123456";
+$user = $_POST['user'];;
+$pass = $_POST['pass'];
 $server = "localhost";
-$db = "db_prueba";
+$db = $_POST['db'];
 
 // Conexion
 
